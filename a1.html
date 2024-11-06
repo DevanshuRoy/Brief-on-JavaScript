@@ -1,8 +1,71 @@
 <html>
     <body>
 
+        <p id="i1"></p><br>
+        <p id="i2"></p><br>
+
         <script>
+
+            function f1(a,b) {
+                // null and NaN are absence of values
+                x=null; // null=0
+                y=x*2;
+                document.write(y+"<br><br>")
+                
+                y=b*a;
+                document.write(y+"<br><br>")
+            }
+            f1(3);
+
+            var x=8;
+
+            if (x==10) {
+                document.write("Devanshu <br><br>");
+            }
+
+            else if (x<10) {
+                document.write("Safalya <br>");
+
+                if (x<0) {
+                    // let keyword is not accessible
+                    let y="negative";
+                }
+                else {
+                    // var keyword is accessible
+                    var z="positive";
+                }
+
+                document.write(y+"<br>");
+                document.write(z+"<br><br>");
+            }
+
+            else {
+                document.write("Atharv <br><br>");
+            }
+
+            // const value cannot be changed
+            const a=10;
+            document.write(a+"<br><br>");
+            // a+=10; changing const variable value will break code
+            document.write(a+"<br><br>");
+
+
+            // display 10 to 20
+            var i;
+            for (i=10;i<=20;i++) {
+                document.write(i+"<br>");
+            }
+
+            document.write("<br>")
+
+            i=50;
+            while (i<=100) {
+                document.write(i+"<br>");
+                i+=10;
+            }
+
             
+
         </script>
 
     </body>
